@@ -1,9 +1,9 @@
-<h1>Active Directory Home Lab</h1>
+<h1>Renaming Windows PC and Installing Active Directory Domain Services</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This lab focused on preparing a Windows Server for domain management by first renaming the PC to match standard naming conventions, then installing the Active Directory Domain Services (AD DS) role. Completing this setup allowed the system to become a Domain Controller, laying the groundwork for managing users, computers, and group policies in a centralized environment—an essential part of enterprise IT infrastructure.
 <br />
 
 
