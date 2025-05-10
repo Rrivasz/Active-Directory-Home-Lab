@@ -123,11 +123,53 @@ This lab focused on preparing a Windows Server for domain management by first re
 <img src="https://i.imgur.com/5Bj3XiP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
 <p align="center">
 [Make sure to include ".local",".net", etc. in the root domain name or it will not let you continue]
- <img src="https://i.imgur.com/x0xCHom.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
-<img src="https://i.imgur.com/x0xCHom.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
-<img src="https://i.imgur.com/x0xCHom.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  
-  <!--
+
+ - You will be prompted to enter a password for the Directory Services Restore Mode. Use the same password that you use to log into the Windows server.
+- For context, The “Directory Services Restore Mode” (DSRM) password is a special password used to access a Windows Server in a mode that allows you to repair or restore Active Directory Domain Services if there’s a problem. This mode is used when the normal startup of Active Directory isn’t working properly, and the DSRM password is required to make important changes to fix it. It’s like having a secret key that can unlock a special toolbox for fixing serious issues in a Windows Server’s directory services.
+- Click “Next”
+<p align="center">
+<img src="https://i.imgur.com/xaKEQ0L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+
+- Leave the box unchecked
+- Click “Next” 
+<p align="center">
+ <img src="https://i.imgur.com/kb9uUe3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+
+ - The server will automatically assign the NetBIOS domain name based upon the server name.
+- Click “Next”
+<p align="center">
+ <img src="https://i.imgur.com/BhjUf9v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><p align="center">
+
+ - Leave the default path settings as is and click “Next”
+<p align="center">
+<img src="https://i.imgur.com/ztEA5nt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Review page is the final stage before everything is fully configured on the Active Directory Domain Services.
+- Click “Next”
+<p align="center">
+<img src="https://i.imgur.com/h6CpDY5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- The Pre-reqs check shows that our Windows server needs some attention in various areas, however we are not going to worry about any of that at this time. Click “Install”.
+<p align="center">
+<img src="https://i.imgur.com/bmrj4o7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- After installation our server will restart and the first thing you should notice is the domain name present in the Windows login screen!
+- Log into the server so that we can verify that Active Directory Domain Services was indeed installed with no issues.
+<p align="center">
+<img src="https://i.imgur.com/OOpRI7D.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+ <b>Step 4: Verification</b>
+
+- In Server Manager, under “Tools”, Click on “Active Directory Users and Computers”. Here is where you see the Active Directory Domain Services.
+ <p align="center">
+<img src="https://i.imgur.com/ahQVXFr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+- Now you see the Active Directory with our domain services, such as the image shown below.
+<p align="center">
+<img src="https://i.imgur.com/cP4c4ir.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+<b>Within this project I renamed the Windows Server and successfully installed Active Directory Domain Services onto the server!</b>
+ <!--
  ```diff
 - text in red
 + text in green
